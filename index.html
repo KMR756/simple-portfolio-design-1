@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwind practice</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+
+      .azeret-mono {
+        font-family: "Azeret Mono", serif;
+      }
+    </style>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #0d1321;
+      }
+    </style>
+  </head>
+  <body class="azeret-mono">
+    <!-- header section start  -->
+    <header>
+      <!-- navbar -->
+      <nav class="w-8/10 mx-auto mt-8">
+        <div class="flex justify-between items-center">
+          <h1 class="font-extrabold text-3xl text-primary">KM Rejoan Tanjim</h1>
+
+          <button class="py-6 px-4 border rounded-lg font-semibold text-xl">
+            Download Resume
+          </button>
+        </div>
+      </nav>
+      <!-- banner section -->
+      <section></section>
+    </header>
+  </body>
+</html>
