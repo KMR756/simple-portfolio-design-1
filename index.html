@@ -15,6 +15,7 @@
     <style type="text/tailwindcss">
       @theme {
         --color-primary: #0d1321;
+        --color-background: rgba(13, 19, 33, 0.02);
       }
     </style>
   </head>
@@ -26,13 +27,49 @@
         <div class="flex justify-between items-center">
           <h1 class="font-extrabold text-3xl text-primary">KM Rejoan Tanjim</h1>
 
-          <button class="py-6 px-4 border rounded-lg font-semibold text-xl">
+          <button
+            class="py-6 px-4 border rounded-lg font-semibold text-xl transition duration-150 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-105"
+          >
             Download Resume
           </button>
         </div>
       </nav>
       <!-- banner section -->
-      <section></section>
+      <div>
+        <img
+          class="absolute mt-7 w-full 2xl:h-7/10"
+          src="assets/Hero-bg.png"
+          alt=""
+        />
+      </div>
+      <div class="mt-14 text-center relative">
+        <img class="inline-block" src="assets/Group.png" alt="" />
+        <h1 class="font-extrabold text-5xl w-3/4 mx-auto mt-5 text-primary">
+          "In the near future, I hope to become a Developer."
+        </h1>
+        <p class="text-xl w-2/4 mx-auto mt-5">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text.
+        </p>
+        <button
+          class="px-6 py-5 border-transparent bg-primary rounded-lg text-white font-semibold text-xl mt-5"
+        >
+          Contact with me
+        </button>
+      </div>
     </header>
+    <main>
+      <div class="w-8/10 mx-auto h-50 bg-background mt-35 rounded-lg">
+        <div class="text-center">
+          <h1 class="pt-16 font-extrabold text-3xl text-primary">
+            Why Web Development??
+          </h1>
+          <p class="mt-7">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text.
+          </p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
